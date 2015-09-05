@@ -1,6 +1,6 @@
 "use strict";
 
-var Foo = (function (_Bar) {
+var Foo = (function(_Bar) {
   babelHelpers.inherits(Foo, _Bar);
 
   function Foo() {
@@ -14,7 +14,7 @@ var Foo = (function (_Bar) {
   return Foo;
 })(Bar);
 
-var Foo2 = (function (_Bar2) {
+var Foo2 = (function(_Bar2) {
   babelHelpers.inherits(Foo2, _Bar2);
 
   function Foo2() {

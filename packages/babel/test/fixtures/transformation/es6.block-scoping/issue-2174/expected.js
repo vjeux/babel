@@ -3,7 +3,7 @@
 if (true) {
   var x;
 
-  (function () {
+  (function() {
     var foo = function foo() {};
 
     var bar = function bar() {

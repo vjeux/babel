@@ -1,4 +1,4 @@
-(function (global, factory) {
+(function(global, factory) {
   if (typeof define === "function" && define.amd) {
     define(["exports", "./lib/render"], factory);
   } else if (typeof exports !== "undefined") {
@@ -10,6 +10,6 @@
     factory(mod.exports, global.render);
     global.actual = mod.exports;
   }
-})(this, function (exports, _libRender) {
+})(this, function(exports, _libRender) {
   "use strict";
 });

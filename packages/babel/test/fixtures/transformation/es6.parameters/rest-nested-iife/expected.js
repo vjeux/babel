@@ -6,8 +6,8 @@ function broken(x) {
   }
 
   if (true) {
-    var _ret = (function () {
-      var Foo = (function (_Bar) {
+    var _ret = (function() {
+      var Foo = (function(_Bar) {
         babelHelpers.inherits(Foo, _Bar);
 
         function Foo() {

@@ -18,7 +18,7 @@ function foo() {}
 function foo() {}
 function foo() {}
 function foo() {}
-a = function () {};
+a = function() {};
 a = { set fooProp(value) {} };
 a = { set fooProp(value) {} };
 a = { get fooProp() {} };
@@ -79,7 +79,7 @@ var [x] = ["hello"];
 function foo({ x }) {}
 function foo([x]) {}
 function foo(...rest) {}
-(function (...rest) {});
+(function(...rest) {});
 (...rest) => rest;
 var a;
 var a;

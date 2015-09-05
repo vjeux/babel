@@ -7,7 +7,7 @@ var y = babelHelpers.objectWithoutProperties(z, ["x"]);
 var x = z[x];
 var y = babelHelpers.objectWithoutProperties(z, [x]);
 
-(function (_ref) {
+(function(_ref) {
   var x = _ref.x;
   var y = babelHelpers.objectWithoutProperties(_ref, ["x"]);
 });

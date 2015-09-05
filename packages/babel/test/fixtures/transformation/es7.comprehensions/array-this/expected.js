@@ -3,7 +3,7 @@
 function add() {
   var _this = this;
 
-  return (function () {
+  return (function() {
     var _ref = [];
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;

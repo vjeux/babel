@@ -5,7 +5,7 @@ function render(text) {
 
   var _ref = <div>{text}</div>;
 
-  return function () {
+  return function() {
     return _ref;
   };
 }

@@ -294,7 +294,7 @@ suite("api", function () {
 
     test("amd", function () {
       var expected = [
-        "define('/foo/bar', ['exports'], function (exports) {",
+        "define('/foo/bar', ['exports'], function(exports) {",
         "  'use strict';",
         "",
         "  foo('bar');",
@@ -306,7 +306,7 @@ suite("api", function () {
 
     test("umd", function () {
       var expected = [
-        "(function (global, factory) {",
+        "(function(global, factory) {",
         "  if (typeof define === 'function' && define.amd) {",
         "    define('/foo/bar', ['exports'], factory);",
         "  } else if (typeof exports !== 'undefined') {",
@@ -318,7 +318,7 @@ suite("api", function () {
         "    factory(mod.exports);",
         "    global.fooBar = mod.exports;",
         "  }",
-        "})(this, function (exports) {",
+        "})(this, function(exports) {",
         "  'use strict';",
         "",
         "  foo('bar');",
@@ -330,12 +330,12 @@ suite("api", function () {
 
     test("system", function () {
       var expected = [
-        "System.register('/foo/bar', [], function (_export) {",
+        "System.register('/foo/bar', [], function(_export) {",
         "  'use strict';",
         "",
         "  return {",
         "    setters: [],",
-        "    execute: function () {",
+        "    execute: function() {",
         "      foo('bar');",
         "    }",
         "  };",

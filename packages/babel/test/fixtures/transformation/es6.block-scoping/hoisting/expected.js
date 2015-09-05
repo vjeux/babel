@@ -5,13 +5,13 @@ var _didIteratorError = false;
 var _iteratorError = undefined;
 
 try {
-  var _loop = function () {
+  var _loop = function() {
     var i = _step.value;
     x = 5;
     var _f = { f: 2 };
     f = _f.f;
 
-    fns.push(function () {
+    fns.push(function() {
       return i * x;
     });
   };

@@ -1,4 +1,4 @@
-(function (global, factory) {
+(function(global, factory) {
   if (typeof define === "function" && define.amd) {
     define("es6.modules-umd/module-name/expected", ["exports"], factory);
   } else if (typeof exports !== "undefined") {
@@ -10,7 +10,7 @@
     factory(mod.exports);
     global.es6ModulesUmdModuleNameExpected = mod.exports;
   }
-})(this, function (exports) {
+})(this, function(exports) {
   "use strict";
 
   foobar();

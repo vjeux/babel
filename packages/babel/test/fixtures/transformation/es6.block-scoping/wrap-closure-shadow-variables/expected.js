@@ -2,8 +2,8 @@
 
 var a = 1;
 
-var _loop = function (_a) {
-  items.forEach(function (item) {
+var _loop = function(_a) {
+  items.forEach(function(item) {
     return _a;
   });
 };

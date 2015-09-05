@@ -1,6 +1,6 @@
 "use strict";
 
-var Foo = (function () {
+var Foo = (function() {
   function Foo() {
     babelHelpers.classCallCheck(this, _Foo);
   }
@@ -10,7 +10,7 @@ var Foo = (function () {
   return Foo;
 })();
 
-var Bar = (function () {
+var Bar = (function() {
   function Bar() {
     babelHelpers.classCallCheck(this, _Bar);
   }
@@ -21,7 +21,7 @@ var Bar = (function () {
   return Bar;
 })();
 
-var Foo2 = (function () {
+var Foo2 = (function() {
   function Foo() {
     babelHelpers.classCallCheck(this, _Foo2);
   }
@@ -31,7 +31,7 @@ var Foo2 = (function () {
   return Foo;
 })();
 
-var Bar2 = (function () {
+var Bar2 = (function() {
   function Bar() {
     babelHelpers.classCallCheck(this, _Bar2);
   }
@@ -42,7 +42,7 @@ var Bar2 = (function () {
   return Bar;
 })();
 
-var Baz = (function () {
+var Baz = (function() {
   function Baz(baz) {
     babelHelpers.classCallCheck(this, _Baz);
 

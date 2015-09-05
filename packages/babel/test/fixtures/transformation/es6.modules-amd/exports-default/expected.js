@@ -1,4 +1,4 @@
-define(["exports", "module"], function (exports, module) {
+define(["exports", "module"], function(exports, module) {
   "use strict";
 
   module.exports = foo;
@@ -7,7 +7,7 @@ define(["exports", "module"], function (exports, module) {
   module.exports = [];
   module.exports = foo;
 
-  module.exports = function () {};
+  module.exports = function() {};
 
   var _default = function _default() {
     babelHelpers.classCallCheck(this, _default);
@@ -24,7 +24,7 @@ define(["exports", "module"], function (exports, module) {
   module.exports = Foo;
   module.exports = foo;
 
-  module.exports = (function () {
+  module.exports = (function() {
     return "foo";
   })();
 });

@@ -8,7 +8,7 @@ var _lodashArrayLast = require("lodash/array/last");
 
 var _lodashArrayLast2 = babelHelpers.interopRequireDefault(_lodashArrayLast);
 
-var Container = (function () {
+var Container = (function() {
   function Container() {
     babelHelpers.classCallCheck(this, Container);
   }

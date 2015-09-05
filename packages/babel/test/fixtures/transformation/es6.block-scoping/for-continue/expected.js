@@ -1,7 +1,7 @@
 "use strict";
 
-var _loop = function (i) {
-  fns.push(function () {
+var _loop = function(i) {
+  fns.push(function() {
     return i;
   });
   return "continue";

@@ -16,8 +16,8 @@ var foo = function foo() {};
 
 var foo = async function foo() {};
 
-var foo = function* () {};
+var foo = function*() {};
 
-var foo = function () {};
+var foo = function() {};
 
-var foo = async function () {};
+var foo = async function() {};

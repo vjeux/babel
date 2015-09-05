@@ -1,8 +1,8 @@
-System.register(["foo"], function (_export) {
+System.register(["foo"], function(_export) {
   "use strict";
 
   return {
-    setters: [function (_foo) {
+    setters: [function(_foo) {
       for (var _key in _foo) {
         if (_key !== "default") _export(_key, _foo[_key]);
       }
@@ -21,6 +21,6 @@ System.register(["foo"], function (_export) {
 
       _export("bar", _foo.bar);
     }],
-    execute: function () {}
+    execute: function() {}
   };
 });

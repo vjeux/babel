@@ -1,4 +1,4 @@
-System.register([], function (_export) {
+System.register([], function(_export) {
   "use strict";
 
   var _default, Foo;
@@ -11,7 +11,7 @@ System.register([], function (_export) {
 
   return {
     setters: [],
-    execute: function () {
+    execute: function() {
       _export("default", 42);
 
       _export("default", {});
@@ -20,7 +20,7 @@ System.register([], function (_export) {
 
       _export("default", foo);
 
-      _export("default", function () {});
+      _export("default", function() {});
 
       _default = function _default() {
         _classCallCheck(this, _default);
@@ -34,7 +34,7 @@ System.register([], function (_export) {
 
       _export("default", Foo);
 
-      _export("default", (function () {
+      _export("default", (function() {
         return "foo";
       })());
     }

@@ -6,7 +6,7 @@ var Test = function Test() {
   this.state = "test";
 };
 
-var Foo = (function (_Bar) {
+var Foo = (function(_Bar) {
   babelHelpers.inherits(Foo, _Bar);
 
   function Foo() {

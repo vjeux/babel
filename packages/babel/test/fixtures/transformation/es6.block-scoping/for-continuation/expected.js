@@ -1,7 +1,7 @@
 "use strict";
 
-var _loop = function (_i) {
-  (function () {
+var _loop = function(_i) {
+  (function() {
     _i;
   });
   console.log(_i);

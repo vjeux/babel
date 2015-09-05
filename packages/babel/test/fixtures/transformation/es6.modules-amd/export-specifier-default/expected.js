@@ -1,4 +1,4 @@
-define(["exports", "module"], function (exports, module) {
+define(["exports", "module"], function(exports, module) {
   "use strict";
 
   var a = 1;

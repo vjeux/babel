@@ -1,4 +1,4 @@
-(function (global, factory) {
+(function(global, factory) {
   if (typeof define === "function" && define.amd) {
     define("my custom module name", ["exports"], factory);
   } else if (typeof exports !== "undefined") {
@@ -10,6 +10,6 @@
     factory(mod.exports);
     global.myCustomModuleName = mod.exports;
   }
-})(this, function (exports) {
+})(this, function(exports) {
   "use strict";
 });

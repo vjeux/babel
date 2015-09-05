@@ -8,7 +8,7 @@ var _foo = require("foo");
 
 var _foo2 = babelHelpers.interopRequireDefault(_foo);
 
-var Foo = (function () {
+var Foo = (function() {
   function Foo() {
     babelHelpers.classCallCheck(this, _Foo);
   }

@@ -1,6 +1,6 @@
 "use strict";
 
-var seattlers = (function () {
+var seattlers = (function() {
   var _seattlers = [];
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;

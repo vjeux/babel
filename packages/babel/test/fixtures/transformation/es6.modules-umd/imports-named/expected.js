@@ -1,4 +1,4 @@
-(function (global, factory) {
+(function(global, factory) {
   if (typeof define === "function" && define.amd) {
     define(["exports", "foo"], factory);
   } else if (typeof exports !== "undefined") {
@@ -10,7 +10,7 @@
     factory(mod.exports, global.foo);
     global.actual = mod.exports;
   }
-})(this, function (exports, _foo) {
+})(this, function(exports, _foo) {
   "use strict";
 
   _foo.bar;

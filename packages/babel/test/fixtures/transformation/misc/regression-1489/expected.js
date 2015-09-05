@@ -1,12 +1,12 @@
-System.register(["foo"], function (_export) {
+System.register(["foo"], function(_export) {
   "use strict";
 
   var toString;
   return {
-    setters: [function (_foo) {
+    setters: [function(_foo) {
       toString = _foo["default"];
     }],
-    execute: function () {
+    execute: function() {
       toString;
     }
   };

@@ -26,7 +26,7 @@ function demo1() {
     args[_key] = arguments[_key];
   }
 
-  return function (i) {
+  return function(i) {
     return args[i + 0];
   };
 }

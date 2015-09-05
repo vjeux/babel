@@ -1,9 +1,9 @@
-System.register(["foo", "bar"], function (_export) {
+System.register(["foo", "bar"], function(_export) {
   "use strict";
 
   var foo, bar;
   return {
-    setters: [function (_foo) {
+    setters: [function(_foo) {
       var _exportObj = {};
 
       for (var _key in _foo) {
@@ -15,7 +15,7 @@ System.register(["foo", "bar"], function (_export) {
       _exportObj["bar"] = _foo.bar;
 
       _export(_exportObj);
-    }, function (_bar) {
+    }, function(_bar) {
       var _exportObj2 = {};
       _exportObj2["bar"] = _bar.foo;
       _exportObj2["default"] = _bar.foo;
@@ -24,7 +24,7 @@ System.register(["foo", "bar"], function (_export) {
 
       _export(_exportObj2);
     }],
-    execute: function () {
+    execute: function() {
       _export("foo", foo);
 
       _export("bar", bar);

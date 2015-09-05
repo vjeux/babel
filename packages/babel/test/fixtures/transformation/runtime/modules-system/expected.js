@@ -1,4 +1,4 @@
-System.register(["babel-runtime/helpers/to-consumable-array", "babel-runtime/regenerator"], function (_export) {
+System.register(["babel-runtime/helpers/to-consumable-array", "babel-runtime/regenerator"], function(_export) {
   var _toConsumableArray, _regeneratorRuntime, marked0$0;
 
   function generator() {
@@ -16,12 +16,12 @@ System.register(["babel-runtime/helpers/to-consumable-array", "babel-runtime/reg
   }
 
   return {
-    setters: [function (_babelRuntimeHelpersToConsumableArray) {
+    setters: [function(_babelRuntimeHelpersToConsumableArray) {
       _toConsumableArray = _babelRuntimeHelpersToConsumableArray["default"];
-    }, function (_babelRuntimeRegenerator) {
+    }, function(_babelRuntimeRegenerator) {
       _regeneratorRuntime = _babelRuntimeRegenerator["default"];
     }],
-    execute: function () {
+    execute: function() {
       "use strict";
 
       _export("generator", generator);

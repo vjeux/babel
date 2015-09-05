@@ -1,13 +1,13 @@
 "use strict";
 
-var Foo = (function () {
+var Foo = (function() {
   function Foo() {
     babelHelpers.classCallCheck(this, Foo);
   }
 
   babelHelpers.createClass(Foo, [{
     key: "foo",
-    value: babelHelpers.asyncToGenerator(function* () {
+    value: babelHelpers.asyncToGenerator(function*() {
       var wat = yield bar();
     })
   }]);

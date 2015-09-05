@@ -8,7 +8,7 @@ exports.test = test;
 exports.test = test = 5;
 exports.test = test += 1;
 
-(function () {
+(function() {
   var test = 2;
   test = 3;
   test++;

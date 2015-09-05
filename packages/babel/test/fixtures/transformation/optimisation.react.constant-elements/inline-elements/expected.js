@@ -20,7 +20,7 @@ function render() {
     },
     key: null
   };
-  return function () {
+  return function() {
     return _ref2;
   };
 }

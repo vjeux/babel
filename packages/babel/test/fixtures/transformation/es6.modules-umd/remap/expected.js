@@ -1,4 +1,4 @@
-(function (global, factory) {
+(function(global, factory) {
   if (typeof define === "function" && define.amd) {
     define(["exports"], factory);
   } else if (typeof exports !== "undefined") {
@@ -10,7 +10,7 @@
     factory(mod.exports);
     global.actual = mod.exports;
   }
-})(this, function (exports) {
+})(this, function(exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -21,7 +21,7 @@
   exports.test = test = 5;
   exports.test = test += 1;
 
-  (function () {
+  (function() {
     var test = 2;
     test = 3;
     test++;

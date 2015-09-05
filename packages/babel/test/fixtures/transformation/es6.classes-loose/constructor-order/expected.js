@@ -1,6 +1,6 @@
 "use strict";
 
-var x = (function () {
+var x = (function() {
   x.prototype.f = function f() {
     1;
     2;

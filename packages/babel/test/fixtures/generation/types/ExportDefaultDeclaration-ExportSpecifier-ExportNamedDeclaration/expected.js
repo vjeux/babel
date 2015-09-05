@@ -2,7 +2,7 @@ export default 42;
 export default {};
 export default [];
 export default foo;
-export default function () {}
+export default function() {}
 export default class {}
 export default function foo() {}
 export default class Foo {}
@@ -22,7 +22,7 @@ export { foo as bar };
 export { foo as default };
 export { foo as default, bar };
 export var foo = 1;
-export var foo2 = function () {};
+export var foo2 = function() {};
 export var foo3;
 export let foo4 = 2;
 export let foo5;

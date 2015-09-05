@@ -71,7 +71,7 @@ function a() {
     args[_key6] = arguments[_key6];
   }
 
-  return function () {
+  return function() {
     function b() {}
 
     console.log("Shouldn't args be from a's scope?", args);

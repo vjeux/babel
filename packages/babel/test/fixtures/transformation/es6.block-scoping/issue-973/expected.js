@@ -2,8 +2,8 @@
 
 var arr = [];
 for (var i = 0; i < 10; i++) {
-  var _loop = function (_i) {
-    arr.push(function () {
+  var _loop = function(_i) {
+    arr.push(function() {
       return _i;
     });
   };

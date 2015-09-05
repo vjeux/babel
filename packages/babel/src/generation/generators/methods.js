@@ -66,8 +66,6 @@ export function FunctionExpression(node, print) {
   if (node.id) {
     this.push(" ");
     print.plain(node.id);
-  } else {
-    this.space();
   }
 
   this._params(node, print);

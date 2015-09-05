@@ -8,7 +8,7 @@ var _ref = React.createElement(
   )
 );
 
-var App = (function (_React$Component) {
+var App = (function(_React$Component) {
   babelHelpers.inherits(App, _React$Component);
 
   function App() {

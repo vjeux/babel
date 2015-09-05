@@ -9,7 +9,7 @@ exports["default"] = {};
 exports["default"] = [];
 exports["default"] = foo;
 
-exports["default"] = function () {};
+exports["default"] = function() {};
 
 var _default = function _default() {
   babelHelpers.classCallCheck(this, _default);
@@ -26,7 +26,7 @@ var Foo = function Foo() {
 exports["default"] = Foo;
 exports["default"] = foo;
 
-exports["default"] = (function () {
+exports["default"] = (function() {
   return "foo";
 })();
 

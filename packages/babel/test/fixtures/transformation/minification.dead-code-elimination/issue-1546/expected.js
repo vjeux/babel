@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var X = (function () {
+var X = (function() {
   function X() {
     babelHelpers.classCallCheck(this, X);
   }
@@ -19,4 +19,3 @@ var X = (function () {
 })();
 
 exports.X = X;
-

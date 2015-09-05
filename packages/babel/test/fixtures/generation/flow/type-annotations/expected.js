@@ -17,7 +17,7 @@ function foo(): {} {}
 function foo<T>() {}
 function foo<T, S>() {}
 function foo<T: F>() {}
-a = function <T, S>() {};
+a = function<T, S>() {};
 a = { set fooProp(value: number) {} };
 a = { set fooProp(value: number): void {} };
 a = { get fooProp(): number {} };
@@ -84,7 +84,7 @@ var [x]: Array<string> = ["hello"];
 function foo({ x }: { x: string }) {}
 function foo([x]: Array<string>) {}
 function foo(...rest: Array<number>) {}
-(function (...rest: Array<number>) {});
+(function(...rest: Array<number>) {});
 (...rest: Array<number>) => rest;
 var a: Map<string, Array<string>>;
 var a: Map<string, Array<string>>;

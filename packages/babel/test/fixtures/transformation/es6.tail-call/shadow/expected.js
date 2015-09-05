@@ -1,6 +1,6 @@
 "use strict";
 
-(function () {
+(function() {
   var _this = this,
       _arguments2 = arguments;
 

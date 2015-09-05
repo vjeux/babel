@@ -2,7 +2,7 @@
 
 var _getIterator = require("babel-runtime/core-js/get-iterator")["default"];
 
-var arr = (function () {
+var arr = (function() {
   var _arr = [];
   var _iteratorNormalCompletion = true;
   var _didIteratorError = false;

@@ -3,7 +3,7 @@
 function render(text) {
   var _ref = <foo>{text}</foo>;
 
-  return function () {
+  return function() {
     return _ref;
   };
 }

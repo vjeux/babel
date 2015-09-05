@@ -1,4 +1,4 @@
-define(["exports", "foo"], function (exports, _foo) {
+define(["exports", "foo"], function(exports, _foo) {
   "use strict";
 
   var _foo2 = babelHelpers.interopRequireDefault(_foo);

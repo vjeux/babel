@@ -1,6 +1,6 @@
 "use strict";
 
-var IdenticalName = (function () {
+var IdenticalName = (function() {
   function IdenticalName(x) {
     return x;
   }
@@ -8,7 +8,7 @@ var IdenticalName = (function () {
   return IdenticalName;
 })();
 
-(function () {
+(function() {
   function foo() {}
 
   return foo;

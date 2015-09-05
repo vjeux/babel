@@ -1,8 +1,8 @@
-System.register("my custom module name", [], function (_export) {
+System.register("my custom module name", [], function(_export) {
   "use strict";
 
   return {
     setters: [],
-    execute: function () {}
+    execute: function() {}
   };
 });
