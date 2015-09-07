@@ -5,7 +5,11 @@ var BaseController = (function(_Chaplin$Controller) {
 
   function BaseController() {
     babelHelpers.classCallCheck(this, BaseController);
-    babelHelpers.get(Object.getPrototypeOf(BaseController.prototype), "constructor", this).apply(this, arguments);
+    babelHelpers.get(
+      Object.getPrototypeOf(BaseController.prototype),
+      "constructor",
+      this
+    ).apply(this, arguments);
   }
 
   return BaseController;
@@ -16,7 +20,11 @@ var BaseController2 = (function(_Chaplin$Controller$Another) {
 
   function BaseController2() {
     babelHelpers.classCallCheck(this, BaseController2);
-    babelHelpers.get(Object.getPrototypeOf(BaseController2.prototype), "constructor", this).apply(this, arguments);
+    babelHelpers.get(
+      Object.getPrototypeOf(BaseController2.prototype),
+      "constructor",
+      this
+    ).apply(this, arguments);
   }
 
   return BaseController2;

@@ -13,7 +13,10 @@ var App = (function(_React$Component) {
 
   function App() {
     babelHelpers.classCallCheck(this, App);
-    babelHelpers.get(Object.getPrototypeOf(App.prototype), "constructor", this).apply(this, arguments);
+    babelHelpers.get(Object.getPrototypeOf(App.prototype), "constructor", this).apply(
+      this,
+      arguments
+    );
   }
 
   babelHelpers.createClass(App, [{
@@ -21,19 +24,7 @@ var App = (function(_React$Component) {
     value: function render() {
       var navbarHeader = _ref;
 
-      return React.createElement(
-        "div",
-        null,
-        React.createElement(
-          "nav",
-          { className: "navbar navbar-default" },
-          React.createElement(
-            "div",
-            { className: "container" },
-            navbarHeader
-          )
-        )
-      );
+      return React.createElement("div", null, React.createElement("nav", { className: "navbar navbar-default" }, React.createElement("div", { className: "container" }, navbarHeader)));
     }
   }]);
   return App;

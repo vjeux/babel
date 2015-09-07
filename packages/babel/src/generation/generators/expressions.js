@@ -134,20 +134,17 @@ export function CallExpression(node, print) {
 
   this.push("(");
 
-  var isPrettyCall = node._prettyCall && !this.format.retainLines && !this.format.compact;
-
-  var separator;
-  if (isPrettyCall) {
-    separator = ",\n";
-    this.newline();
-    this.indent();
-  }
-
-  print.list(node.arguments, { separator });
-
-  if (isPrettyCall) {
-    this.newline();
-    this.dedent();
+  if (node.arguments && node.arguments.length) {
+    print.tryMaxColumns(
+      () => {
+        print.list(node.arguments);
+      },
+      () => {
+        print.generator.newline();
+        print.join(node.arguments, {separator: ',\n', indent: true});
+        print.generator.newline();
+      }
+    );
   }
 
   this.push(")");

@@ -1,6 +1,4 @@
-System.register(["babel-runtime/helpers/to-consumable-array", "babel-runtime/regenerator"], function(
-  _export
-) {
+System.register(["babel-runtime/helpers/to-consumable-array", "babel-runtime/regenerator"], function(_export) {
   var _toConsumableArray, _regeneratorRuntime, marked0$0;
 
   function generator() {

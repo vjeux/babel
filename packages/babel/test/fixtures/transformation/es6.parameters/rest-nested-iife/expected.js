@@ -12,7 +12,11 @@ function broken(x) {
 
         function Foo() {
           babelHelpers.classCallCheck(this, Foo);
-          babelHelpers.get(Object.getPrototypeOf(Foo.prototype), "constructor", this).apply(this, arguments);
+          babelHelpers.get(
+            Object.getPrototypeOf(Foo.prototype),
+            "constructor",
+            this
+          ).apply(this, arguments);
         }
 
         return Foo;

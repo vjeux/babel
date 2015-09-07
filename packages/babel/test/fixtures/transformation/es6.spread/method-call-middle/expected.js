@@ -1,3 +1,6 @@
 "use strict";
 
-add.apply(undefined, [foo].concat(babelHelpers.toConsumableArray(numbers), [bar]));
+add.apply(
+  undefined,
+  [foo].concat(babelHelpers.toConsumableArray(numbers), [bar])
+);

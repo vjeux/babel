@@ -4,11 +4,7 @@ var x = React.createElement(
   "foo",
   "bar",
   "baz",
-  React.createElement(
-    "div",
-    null,
-    "buz bang"
-  ),
+  React.createElement("div", null, "buz bang"),
   "qux",
   null,
   "quack"

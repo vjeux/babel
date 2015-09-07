@@ -10,7 +10,10 @@ var Foo = (function(_Bar) {
     parentOptions.init = function() {
       this;
     };
-    babelHelpers.get(Object.getPrototypeOf(Foo.prototype), "constructor", this).call(this, parentOptions);
+    babelHelpers.get(Object.getPrototypeOf(Foo.prototype), "constructor", this).call(
+      this,
+      parentOptions
+    );
   }
 
   return Foo;

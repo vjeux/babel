@@ -179,10 +179,6 @@ export default function (opts) {
 
       callExpr.arguments = callExpr.arguments.concat(node.children);
 
-      if (callExpr.arguments.length >= 3) {
-        callExpr._prettyCall = true;
-      }
-
       return t.inherits(callExpr, node);
     }
   };

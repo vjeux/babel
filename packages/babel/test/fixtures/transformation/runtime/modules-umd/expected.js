@@ -1,8 +1,15 @@
 (function(global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "foo", "babel-runtime/helpers/interop-require-default"], factory);
+    define(
+      ["exports", "foo", "babel-runtime/helpers/interop-require-default"],
+      factory
+    );
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("foo"), require("babel-runtime/helpers/interop-require-default"));
+    factory(
+      exports,
+      require("foo"),
+      require("babel-runtime/helpers/interop-require-default")
+    );
   } else {
     var mod = {
       exports: {}

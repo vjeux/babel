@@ -6,7 +6,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _foo = require("foo");
 
-babelHelpers.defaults(exports, babelHelpers.interopExportWildcard(_foo, babelHelpers.defaults));
+babelHelpers.defaults(
+  exports,
+  babelHelpers.interopExportWildcard(_foo, babelHelpers.defaults)
+);
 Object.defineProperty(exports, "foo", {
   enumerable: true,
   get: function get() {

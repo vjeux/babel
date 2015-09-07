@@ -74,7 +74,9 @@ export default class NodePrinter {
   }
 
   tryMaxColumns(a, b) {
-    if (this.generator.format.compact) {
+    if (this.generator.format.compact ||
+        this.generator.format.concise ||
+        this.generator.format.retainLines) {
       a();
       return;
     }
