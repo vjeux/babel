@@ -54,7 +54,6 @@ export default class NodePrinter {
       opts.separator = ",";
       if (!this.generator.format.compact) opts.separator += " ";
     }
-
     return this.join(items, opts);
   }
 
@@ -72,5 +71,23 @@ export default class NodePrinter {
 
   indentOnComments(node) {
     return this.generator.printAndIndentOnComments(this, node);
+  }
+
+  tryMaxColumns(a, b) {
+    if (this.generator.format.compact) {
+      a();
+      return;
+    }
+
+    var checkpoint = this.generator.checkpoint();
+    var maxColumns = this.generator.format.maxColumns;
+    this.generator.format.maxColumns = Infinity;
+    a();
+
+    this.generator.format.maxColumns = maxColumns;
+    if (this.generator.position.column > maxColumns) {
+      this.generator.restore(checkpoint);
+      b();
+    }
   }
 }

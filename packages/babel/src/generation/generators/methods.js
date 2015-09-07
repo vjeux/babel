@@ -7,12 +7,25 @@ import * as t from "../../types";
 export function _params(node, print) {
   print.plain(node.typeParameters);
   this.push("(");
-  print.list(node.params, {
-    iterator: (node) =>{
-      if (node.optional) this.push("?");
-      print.plain(node.typeAnnotation);
-    }
-  });
+
+  var iterator = (node) => {
+    if (node.optional) this.push("?");
+    print.plain(node.typeAnnotation);
+  };
+
+  if (node.params && node.params.length !== 0) {
+    print.tryMaxColumns(
+      () => {
+        print.list(node.params, {iterator});
+      },
+      () => {
+        print.generator.newline();
+        print.join(node.params, {separator: ',\n', indent: true, iterator});
+        print.generator.newline();
+      },
+    );
+  }
+
   this.push(")");
 
   if (node.returnType) {

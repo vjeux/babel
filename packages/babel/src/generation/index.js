@@ -56,7 +56,8 @@ class CodeGenerator {
         adjustMultilineComment: true,
         style: style,
         base: 0
-      }
+      },
+      maxColumns: 80,
     };
 
     if (format.compact === "auto") {
@@ -437,6 +438,19 @@ class CodeGenerator {
       // whitespace after
       this.newline(this.whitespace.getNewlinesAfter(comment));
     }
+  }
+
+  checkpoint() {
+    var line = this.buffer.position.line;
+    var column = this.buffer.position.column;
+    var buf = this.buffer.buf;
+    return {line, column, buf};
+  }
+
+  restore(checkpoint) {
+    this.buffer.position.line = checkpoint.line;
+    this.buffer.position.column = checkpoint.column;
+    this.buffer.buf = checkpoint.buf;
   }
 }
 
