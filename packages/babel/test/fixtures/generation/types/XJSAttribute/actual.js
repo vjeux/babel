@@ -1,3 +1,5 @@
+<div id='wow'></div>;
+
 <div id="wow"></div>;
 
 <div id="wow">text</div>;

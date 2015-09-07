@@ -52,6 +52,7 @@ class CodeGenerator {
       comments: opts.comments == null || opts.comments,
       compact: opts.compact,
       quotes: CodeGenerator.findCommonStringDelimiter(code, tokens),
+      jsxQuotes: "double",
       indent: {
         adjustMultilineComment: true,
         style: style,

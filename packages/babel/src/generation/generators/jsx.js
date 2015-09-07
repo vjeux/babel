@@ -8,7 +8,15 @@ export function JSXAttribute(node, print) {
   print.plain(node.name);
   if (node.value) {
     this.push("=");
-    print.plain(node.value);
+
+    if (t.isLiteral(node.value)) {
+      var quotes = print.generator.format.quotes;
+      print.generator.format.quotes = print.generator.format.jsxQuotes;
+      print.plain(node.value);
+      print.generator.format.quotes = quotes;
+    } else {
+      print.plain(node.value);
+    }
   }
 }
 
