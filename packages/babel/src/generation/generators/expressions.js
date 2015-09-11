@@ -130,24 +130,72 @@ export function Decorator(node, print) {
  */
 
 export function CallExpression(node, print) {
-  print.plain(node.callee);
 
-  this.push("(");
+  var printOneLine = (node) => {
+    this.push("(");
+    print.list(node.arguments);
+    this.push(")");
+  };
 
-  if (node.arguments && node.arguments.length) {
-    print.tryMaxColumns(
-      () => {
-        print.list(node.arguments);
-      },
-      () => {
-        print.generator.newline();
-        print.join(node.arguments, {separator: ',\n', indent: true});
-        print.generator.newline();
+  var printMultiLine = (node) => {
+    this.push("(");
+
+    if (node.arguments && node.arguments.length) {
+      print.tryMaxColumns(
+        () => {
+          print.list(node.arguments);
+        },
+        () => {
+          print.generator.newline();
+          print.join(node.arguments, {separator: ',\n', indent: true});
+          print.generator.newline();
+        }
+      );
+    }
+
+    this.push(")");
+  };
+
+  print.tryMaxColumns(
+    () => {
+      print.plain(node.callee);
+      printOneLine(node);
+    },
+
+    () => {
+      var callExpressions = [];
+      var callExpression = node;
+      while (callExpression.type === 'CallExpression' && callExpression.callee.type === 'MemberExpression') {
+        callExpressions.unshift(callExpression);
+        callExpression = callExpression.callee.object;
       }
-    );
-  }
 
-  this.push(")");
+      if (callExpressions.length <= 1) {
+        print.plain(node.callee);
+        printMultiLine(node);
+        return;
+      }
+
+      print.plain(callExpression);
+
+      print.generator.indent();
+      callExpressions.forEach(callExpression => {
+        print.generator.newline();
+        print.tryMaxColumns(
+          () => {
+            NonRecursiveMemberExpression.call(this, callExpression.callee, print);
+            printOneLine(callExpression);
+          },
+          () => {
+            NonRecursiveMemberExpression.call(this, callExpression.callee, print);
+            printMultiLine(callExpression);
+          },
+        );
+      });
+
+      print.generator.dedent();
+    }
+  );
 }
 
 /**
@@ -257,10 +305,7 @@ export {
  * Print MemberExpression, prints object, property, and value. Handles computed.
  */
 
-export function MemberExpression(node, print) {
-  var obj = node.object;
-  print.plain(obj);
-
+function NonRecursiveMemberExpression(node, print) {
   if (!node.computed && t.isMemberExpression(node.property)) {
     throw new TypeError("Got a MemberExpression for MemberExpression property");
   }
@@ -285,6 +330,11 @@ export function MemberExpression(node, print) {
     this.push(".");
     print.plain(node.property);
   }
+}
+
+export function MemberExpression(node, print) {
+  print.plain(node.object);
+  NonRecursiveMemberExpression.call(this, node, print);
 }
 
 /**

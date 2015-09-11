@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
-require("babel-core");
+require("../../../babel");
 
-var moduleFormatters = require("babel-core/lib/transformation/modules");
+var moduleFormatters = require("../../../babel/lib/transformation/modules");
 var pathExists       = require("path-exists");
 var commander        = require("commander");
-var transform        = require("babel-core").transform;
+var transform        = require("../../../babel").transform;
 var kebabCase        = require("lodash/string/kebabCase");
-var options          = require("babel-core").options;
-var util             = require("babel-core").util;
+var options          = require("../../../babel").options;
+var util             = require("../../../babel").util;
 var uniq             = require("lodash/array/uniq");
 var each             = require("lodash/collection/each");
 var keys             = require("lodash/object/keys");
@@ -68,7 +68,7 @@ commander.on("--help", function () {
 });
 
 var pkg = require("../../package.json");
-commander.version(pkg.version + " (babel-core " + require("babel-core").version + ")");
+commander.version(pkg.version + " (../../../babel " + require("../../../babel").version + ")");
 commander.usage("[options] <files ...>");
 commander.parse(process.argv);
 
